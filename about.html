@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Smile Care Dental Studio</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#FAFAFA] text-gray-800 antialiased overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm py-3 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 rounded-xl bg-[#14B8A6]/10 text-[#14B8A6] flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <span class="text-2xl">🦷</span>
+                </div>
+                <span class="font-['Poppins'] font-bold text-xl tracking-tight text-gray-900 group-hover:text-[#14B8A6] transition-colors">
+                    Smile Care
+                </span>
+            </a>
+            <div class="hidden md:flex gap-8 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-[#14B8A6] font-medium transition-colors text-sm">Home</a>
+                <a href="services.html" class="text-gray-600 hover:text-[#14B8A6] font-medium transition-colors text-sm">Services</a>
+                <a href="about.html" class="text-[#14B8A6] font-medium text-sm">About</a>
+                <a href="contact.html" class="text-gray-600 hover:text-[#14B8A6] font-medium transition-colors text-sm">Contact</a>
+            </div>
+            <a href="contact.html#appointment" class="hidden md:inline-flex bg-[#FF6B6B] hover:bg-[#F05151] text-white font-medium py-2.5 px-6 rounded-full transition-all hover:shadow-lg hover:-translate-y-0.5">Book Appointment</a>
+            <button class="md:hidden text-gray-600 p-2" id="mobile-menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 right-0 bg-white shadow-xl border-t border-gray-100 p-4 flex flex-col gap-4 md:hidden">
+            <a href="index.html" class="text-gray-600 font-medium">Home</a>
+            <a href="services.html" class="text-gray-600 font-medium">Services</a>
+            <a href="about.html" class="text-[#14B8A6] font-medium">About</a>
+            <a href="contact.html" class="text-gray-600 font-medium">Contact</a>
+            <a href="contact.html#appointment" class="bg-[#FF6B6B] text-white text-center font-medium py-3 rounded-xl mt-2">Book Appointment</a>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="py-32 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative mx-auto lg:mx-0 w-full max-w-md fade-up">
+                <div class="relative aspect-square rounded-full overflow-hidden border-8 border-white shadow-2xl bg-white">
+                    <img src="https://images.unsplash.com/photo-1594824436998-d40d134b2671?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dr. Sarah Johnson" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute bottom-4 right-4 bg-white rounded-2xl p-4 shadow-xl flex items-center gap-3">
+                    <div class="w-12 h-12 bg-[#14B8A6]/10 rounded-full flex items-center justify-center text-[#14B8A6] font-bold text-xl">12</div>
+                    <div>
+                        <p class="text-xs text-gray-500 font-medium uppercase tracking-wider">Years of</p>
+                        <p class="font-['Poppins'] font-bold text-gray-900">Experience</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fade-up delay-100">
+                <div class="inline-block px-4 py-2 rounded-full bg-[#FF6B6B]/10 text-[#FF6B6B] font-medium text-sm mb-6">Meet Your Dentist</div>
+                <h1 class="text-4xl md:text-5xl font-['Poppins'] font-bold text-gray-900 mb-6">Dedicated to Creating <span class="text-[#14B8A6]">Confident Smiles</span></h1>
+                <p class="text-gray-600 text-lg mb-4 leading-relaxed">
+                    "Hello! I'm Dr. Sarah Johnson. I started Smile Care Dental Studio with a simple vision: to make dental visits something to look forward to, rather than fear."
+                </p>
+                <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                    With over a decade of experience in cosmetic and family dentistry, my team and I combine advanced technology with a gentle, compassionate approach.
+                </p>
+                <div class="border-t border-gray-100 pt-8">
+                    <p class="font-['Poppins'] font-bold text-xl text-gray-900">Dr. Sarah Johnson</p>
+                    <p class="text-[#14B8A6] font-medium text-sm mt-1">Lead Dentist & Founder</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-[#FAFAFA]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 fade-up">
+                <h2 class="text-3xl md:text-4xl font-['Poppins'] font-bold text-gray-900 mb-4">Smiles That <span class="text-[#14B8A6]">Speak</span></h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-[2rem] p-8 shadow-sm fade-up">
+                    <p class="text-gray-700 italic mb-8">"I've always been terrified of the dentist, but Dr. Sarah changed that. The pain-free treatment is real!"</p>
+                    <h4 class="font-['Poppins'] font-bold text-gray-900">Emily Davis</h4>
+                </div>
+                <div class="bg-white rounded-[2rem] p-8 shadow-sm fade-up delay-100">
+                    <p class="text-gray-700 italic mb-8">"Took my 5-year-old here for his first checkup. He actually wants to go back!"</p>
+                    <h4 class="font-['Poppins'] font-bold text-gray-900">Michael Smith</h4>
+                </div>
+                <div class="bg-white rounded-[2rem] p-8 shadow-sm fade-up delay-200">
+                    <p class="text-gray-700 italic mb-8">"Got my teeth whitened here before my wedding. Beautiful clinic and wonderful staff."</p>
+                    <h4 class="font-['Poppins'] font-bold text-gray-900">Jessica Wong</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#14B8A6] text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="font-['Poppins'] font-bold text-2xl mb-4 flex items-center gap-2 justify-center md:justify-start">
+                    <span class="text-2xl">🦷</span> Smile Care
+                </h3>
+                <p class="text-white/80 text-sm">Because your smile deserves the absolute best care.</p>
+            </div>
+            <div>
+                <h4 class="font-['Poppins'] font-bold text-lg mb-4">Quick Links</h4>
+                <div class="flex flex-col gap-2 text-white/80">
+                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                    <a href="services.html" class="hover:text-white transition-colors">Services</a>
+                    <a href="about.html" class="hover:text-white transition-colors">About Us</a>
+                    <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-['Poppins'] font-bold text-lg mb-4">Contact</h4>
+                <p class="text-white/80">123 Bright Smile Blvd<br>Dental City, NY 10001<br>+1 (234) 567-890</p>
+            </div>
+        </div>
+        <div class="text-center text-white/60 text-sm border-t border-white/20 pt-8 max-w-7xl mx-auto px-4">
+            © 2026 Smile Care Dental Studio. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,21 +1,67 @@
-/* Custom Styles for Smile Care */
+/* Smile Care Dental Studio Custom Styles */
+
 body {
     font-family: 'Inter', sans-serif;
 }
+
 h1, h2, h3, h4, h5, h6, .font-heading {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Scroll reveal utilities */
-.fade-up {
+/* Scroll Reveal Utilities */
+.reveal {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transform: translateY(40px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
 }
-.fade-up.visible {
+
+.reveal.active {
     opacity: 1;
     transform: translateY(0);
 }
+
 .delay-100 { transition-delay: 100ms; }
 .delay-200 { transition-delay: 200ms; }
 .delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+
+/* FAQ Accordion Styling */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    padding-top: 1rem;
+    padding-bottom: 1.25rem;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(180deg);
+    color: #14B8A6;
+}
+
+.faq-item.active .faq-question {
+    color: #14B8A6;
+}
+
+/* Background Blob Animations */
+@keyframes blob-float {
+    0%, 100% { 
+        transform: translate(0, 0) scale(1); 
+    }
+    33% { 
+        transform: translate(30px, -50px) scale(1.1); 
+    }
+    66% { 
+        transform: translate(-20px, 20px) scale(0.9); 
+    }
+}
+
+.animate-blob {
+    animation: blob-float 10s infinite alternate ease-in-out;
+}

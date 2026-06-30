@@ -1,0 +1,8 @@
+{
+  "name": "Smile Care Dental Studio",
+  "description": "A modern, vibrant, and professional single-page website for a dental clinic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

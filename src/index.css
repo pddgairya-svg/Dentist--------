@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #14B8A6;
+  --color-primary-hover: #0F9788;
+  --color-secondary: #FF6B6B;
+  --color-secondary-hover: #F05151;
+  --color-accent: #FFD93D;
+  --color-background: #FAFAFA;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
